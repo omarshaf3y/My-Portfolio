@@ -68,19 +68,23 @@ a:hover {
 
 .logo:hover {
   cursor: default;
-  transform: scale(1.2); /* Increase size on hover */
+  transform: scale(1.2);
+  /* Increase size on hover */
   color: #A9A9A9;
 }
+
 @keyframes rotateIn {
   from {
     transform: rotate(-180deg);
     opacity: 0;
   }
+
   to {
     transform: rotate(0);
     opacity: 1;
   }
 }
+
 /* HAMBURGER MENU */
 
 #hamburger-nav {
@@ -200,16 +204,19 @@ section {
   animation: fadeIn 1s ease-in-out forwards;
   opacity: 0;
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 .section__text p {
   font-weight: 600;
 }
@@ -226,8 +233,26 @@ section {
 .title {
   font-size: 3rem;
   text-align: center;
+
+}
+#profile .title {
+  position: relative;
+
+  overflow: hidden;
+  white-space: nowrap;
+  width: 13ch;
+  animation: typing 2s steps(13, end) 1s infinite,
+    blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0; }
+  to { width: 13ch; }
 }
 
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: orange; }
+}
 #socials-container {
   display: flex;
   justify-content: center;
@@ -315,9 +340,11 @@ section {
 .about-pic {
   border-radius: 2rem;
 }
-.text-container{
+
+.text-container {
   font-weight: bold;
 }
+
 .arrow {
   position: absolute;
   right: -5rem;
@@ -344,18 +371,26 @@ section {
   width: 400px;
   margin: auto 0;
 }
+
 .section__pic-container img {
   border-radius: 200px;
-  animation: bounceUpDown 1s ease-in-out infinite; /* Adjust duration and easing function */
+  animation: bounceUpDown 1s ease-in-out infinite;
+  /* Adjust duration and easing function */
 }
+
 @keyframes bounceUpDown {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
-    transform: translateY(-10px); /* Adjust the distance of the bounce */
+    transform: translateY(-10px);
+    /* Adjust the distance of the bounce */
   }
 }
+
 /* EXPERIENCE SECTION */
 
 #experience {
@@ -399,7 +434,7 @@ article .icon {
 
 #projects {
   position: relative;
-  
+
 }
 
 .color-container {
